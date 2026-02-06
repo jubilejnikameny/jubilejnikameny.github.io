@@ -1,0 +1,103 @@
+/* ---------------------------------- */
+/* style-mobile.css - Responzivní úpravy pro mobil */
+/* ---------------------------------- */
+
+/* Základní box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Tělo stránky */
+body {
+  margin: 0;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Obrázky */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Nadpisy a odstavce */
+h1, h2, h3 {
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+/* Menu / navigace */
+nav, .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column; /* svisle na mobilu */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0.25em 0;
+}
+
+/* Responzivní text pro menší obrazovky */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+}
+
+.image-row {
+  display: flex;            
+  justify-content: center;  
+  flex-wrap: wrap;          
+  gap: 10px;                
+}
+
+.image-row img {
+  flex-shrink: 0;           
+  height: auto;             
+}
+
+.side-images-text {
+  display: flex;             /* obrázky + text v řadě */
+  align-items: flex-start;   /* zarovnání shora */
+  justify-content: space-between; /* obrázky po stranách, text uprostřed */
+  gap: 20px;                 /* mezera mezi textem a obrázky */
+  flex-wrap: wrap;           /* na malých obrazovkách se zalomí */
+}
+
+.side-images-text img {
+  flex-shrink: 0;            /* obrázky se nezmenšují */
+  max-width: 140px;          /* zůstane jejich původní velikost */
+  height: auto;
+}
+
+.side-images-text p {
+  flex: 1;                   /* text zabere zbývající prostor */
+  margin: 0;
+}
