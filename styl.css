@@ -101,3 +101,45 @@ nav li {
   flex: 1;                   /* text zabere zbývající prostor */
   margin: 0;
 }
+
+.header {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    align-items: center;
+    width: 100%;
+}
+
+.page-title {
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5rem;   /* podobné size=4, klidně 1.6rem */
+    font-weight: bold;
+    color: #171AAA;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.header-lang {
+    text-align: right;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #171AAA;
+    text-decoration: none;
+}
+
+.lang-switch img {
+    height: 14px;
+    display: block;
+}
+
+.lang-switch:hover {
+    background-color: #f0f0f0;
+}
