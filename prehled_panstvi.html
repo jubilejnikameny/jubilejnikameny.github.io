@@ -1,311 +1,417 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!DOCTYPE html>
+<html lang="cs">
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
    <meta name="GENERATOR" content="Mozilla/4.79 [en] (Windows NT 5.0; U) [Netscape]">
    <title>Přehled lichtenštejnských památníků</title>
+   
+     <!-- Stejný CSS jako index.html -->
+  <link rel="stylesheet" href="styl.css">
+  <style>
+    /* Přídavné CSS pro moderní tabulku */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header.main-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header.main-header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+
+    header.main-header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:hover {
+      background-color: #f1f9ff;
+    }
+
+    /* Responzivní design pro mobil */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        display: none; /* skryjeme hlavičky pro mobil */
+      }
+
+      td {
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45%;
+        padding-left: 1rem;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+
+      /* Specifikujeme text pro každou buňku podle pořadí */
+      td:nth-of-type(1)::before { content: "Panství"; }
+      td:nth-of-type(2)::before { content: "Počet památníků"; }
+      td:nth-of-type(3)::before { content: "Poznámky"; }
+    }
+	
+	/* Přidat střídání barev řádků */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* světlejší řádky */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* bílá, nebo tmavší, pokud chceš kontrastnější */
+}
+	
+  </style>   
 </head>
-<body text="#000000" bgcolor="#E5EEFF" link="#0000EE" vlink="#551A8B" alink="#FF0000"><!--wz-lista-13-w-->
+<body>
 
-<TABLE  CELLPADDING=3 CELLSPACING=0 border=0 cols=3>
-  <TBODY>
-    <TR>
-      <TD align=left><A href="index.html"><IMG src="a_buttons/bt_uvod2.jpg" height=19></A>&nbsp;&nbsp;</TD>
-      <TD align=left><A href="prehled_abecedni.html"><IMG src="a_buttons/bt_abc2.jpg" height=19></A>&nbsp;&nbsp;</TD>
-    </TR>
-  </TBODY>
-</TABLE>
-<HR>
-<BR>
-
-<b><u><font face="Verdana" color="#171AAA"><font size=+1>Přehled lichtenštejnských památníků podle bývalých panství</font></font></u></b>
-<br>&nbsp;
+<nav class="top-nav">
+  <ul>
+    <li><a href="index.html">Úvod</a></li>
+    <li><a href="prehled_abecedni.html">Abecední přehled</a></li>    
+  </ul>
+</nav>
+<hr>
 
 
-<table CELLPADDING=2 CELLSPACING=0 bordercolor=#000000 frame=box rules=none COLS=5>
-<tr ALIGN=CENTER bgcolor=#D3D3D3>
-<td WIDTH="435"><b>Panství (velkostatek)</b></td>
+ <div class="container">
+<header class="main-header">
+  <h1>Přehled lichtenštejnských památníků podle panství</h1>
+  <p>Seznam památníků podle historických panství s počty dochovaných a zdokumentovaných.</p>
+</header>
 
-<td WIDTH="100"><b>Historická země</b></td>
- 
-<td WIDTH="130"><b>Zdokumentované památníky</b>&nbsp;</td>
-<td WIDTH="130"><b>Nezdokumentované památníky</b>&nbsp;</td>
-<td WIDTH="130"><b>Nedochované památníky</b>&nbsp;</td>
- 
+
+<section class="data-table">
+<table>
+<thead>
+<tr>
+<th>Panství (velkostatek)</th>
+<th>Historická země</th>
+<th>Zdokumentované památníky</th>
+<th>Nezdokumentované památníky</th>
+<th>Nedochované památníky</th>
 </tr>
- 
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="kostelecncl/kostelecncl_o.html">Panství Kostelec nad Černými lesy a Uhříněves</a></td>
- 
-<td ALIGN=CENTER>Čechy</td>
-
-<td ALIGN=CENTER>13</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>2</td>
- 
+</thead>
+<tbody>
+<tr>
+<td><a href="kostelecncl/kostelecncl_o.html">Panství Kostelec nad Černými lesy a Uhříněves</a></td>
+<td>Čechy</td>
+<td>13</td>
+<td>0</td>
+<td>2</td>
 </tr>
  
 <tr>
-<td ALIGN=CENTER><a href="rataje/rataje_o.html">Panství Rataje</a></td>
+<td><a href="rataje/rataje_o.html">Panství Rataje</a></td>
  
-<td ALIGN=CENTER>Čechy</td>
+<td>Čechy</td>
 
-<td ALIGN=CENTER>4</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER>Panství Kounice</td>
- 
-<td ALIGN=CENTER>Čechy</td>
-
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
  
 </tr>
 
 <tr>
-<td ALIGN=CENTER>Panství Radim</td>
+<td>Panství Kounice</td>
  
-<td ALIGN=CENTER>Čechy</td>
+<td>Čechy</td>
 
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
  
 </tr>
 
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="lanskroun/lanskroun_o.html">Panství Lanškroun</a></td>
+<tr>
+<td>Panství Radim</td>
  
-<td ALIGN=CENTER>Čechy</td> 
+<td>Čechy</td>
 
-<td ALIGN=CENTER>7</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="lanskroun/lanskroun_o.html">Panství Lanškroun</a></td>
+ 
+<td>Čechy</td> 
+
+<td>7</td>
+<td>0</td>
+<td>0</td>
  
 </tr>
 
 
 <tr>
-<td ALIGN=CENTER><a href="rumburk/rumburk_o.html">Panství Rumburk</a></td>
+<td><a href="rumburk/rumburk_o.html">Panství Rumburk</a></td>
  
-<td ALIGN=CENTER>Čechy/Sasko</td>
+<td>Čechy/Sasko</td>
 
-<td ALIGN=CENTER>5</td>
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>1</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
  
 </tr>
 
 
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="bucovicezdanice/bucovicezdanice_o.html">Panství Bučovice a Ždánice</a></td>
+<tr>
+<td><a href="bucovicezdanice/bucovicezdanice_o.html">Panství Bučovice a Ždánice</a></td>
  
-<td ALIGN=CENTER>Morava</td>
+<td>Morava</td>
 
-<td ALIGN=CENTER>9</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>4</td>
+<td>9</td>
+<td>0</td>
+<td>4</td>
  
 </tr>
  
 <tr>
-<td ALIGN=CENTER><a href="pozorice/pozorice_o.html">Panství Pozořice a statek Křtinský</a></td>
+<td><a href="pozorice/pozorice_o.html">Panství Pozořice a statek Křtinský</a></td>
 
-<td ALIGN=CENTER>Morava</td> 
+<td>Morava</td> 
 
-<td ALIGN=CENTER>10</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>3</td>
-</tr> 
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="breclav/breclav_o.html">Panství Lednice, Valtice a Břeclav</a></td>
- 
-<td ALIGN=CENTER>Morava</td> 
-
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
-
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="uhostroh/uhostroh_o.html">Panství Uherský Ostroh</a></td>
- 
-<td ALIGN=CENTER>Morava</td> 
-
-<td ALIGN=CENTER>3</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>1</td>
- 
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="plumlov/plumlov_o.html">Panství Plumlov</a></td>
-
-<td ALIGN=CENTER>Morava</td> 
-
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>0</td>
+<td>10</td>
+<td>0</td>
+<td>3</td>
 </tr> 
 
 <tr>
-<td ALIGN=CENTER><a href="hradisko/hradisko_o.html">Panství Hradisko, Čelechovice, Kožušany, Žerotín, Týneček a Dolany</a></td>
+<td><a href="breclav/breclav_o.html">Panství Lednice, Valtice a Břeclav</a></td>
  
-<td ALIGN=CENTER>Morava</td>
+<td>Morava</td> 
 
-<td ALIGN=CENTER>4</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+
+</tr>
+
+<tr>
+<td><a href="uhostroh/uhostroh_o.html">Panství Uherský Ostroh</a></td>
+ 
+<td>Morava</td> 
+
+<td>3</td>
+<td>2</td>
+<td>1</td>
  
 </tr>
 
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="kolstejn/kolstejn_o.html">Panství Kolštejn</a> (dnes Branná)</td>
- 
-<td ALIGN=CENTER>Morava</td>
+<tr>
+<td><a href="plumlov/plumlov_o.html">Panství Plumlov</a></td>
 
-<td ALIGN=CENTER>5</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>0</td>
+<td>Morava</td> 
+
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr> 
+
+<tr>
+<td><a href="hradisko/hradisko_o.html">Panství Hradisko, Čelechovice, Kožušany, Žerotín, Týneček a Dolany</a></td>
+ 
+<td>Morava</td>
+
+<td>4</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="kolstejn/kolstejn_o.html">Panství Kolštejn</a> (dnes Branná)</td>
+ 
+<td>Morava</td>
+
+<td>5</td>
+<td>2</td>
+<td>0</td>
 
 </tr>
 
 
 <tr>
-<td ALIGN=CENTER><a href="karlovec/karlovec_o.html">Panství Karlovec</a></td>
+<td><a href="karlovec/karlovec_o.html">Panství Karlovec</a></td>
  
-<td ALIGN=CENTER>Morava</td>
+<td>Morava</td>
 
-<td ALIGN=CENTER>4</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>1</td>
- 
-</tr>
-
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="ruda/ruda_o.html">Panství Ruda a statek Mlýnice</a></td>
- 
-<td ALIGN=CENTER>Morava</td>
-
-<td ALIGN=CENTER>6</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="mor_trebova/mor_trebova_o.html">Panství Moravská Třebová a Trnávka</a></td>
- 
-<td ALIGN=CENTER>Morava</td>
-
-<td ALIGN=CENTER>10</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="sternberk/sternberk_o.html">Panství Šternberk</a></td>
- 
-<td ALIGN=CENTER>Morava</td>
-
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>9</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="usov/usov_o.html">Panství Úsov</a></td>
- 
-<td ALIGN=CENTER>Morava</td>
-
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>2</td>
- 
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="zabreh/zabreh_o.html">Panství Zábřeh a statek Krasíkov</a></td>
- 
-<td ALIGN=CENTER>Morava</td>
-
-<td ALIGN=CENTER>7</td>
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="krnov/krnov_o.html">Opavské a Krnovské knížectví</a></td>
- 
-<td ALIGN=CENTER>Slezsko</td>
-
-<td ALIGN=CENTER>4</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>5</td>
-
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="judenau/judenau_o.html">Panství Judenau</a></td>
- 
-<td ALIGN=CENTER>Dolní Rakousy</td>
-
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>2</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
  
 </tr>
 
 
 <tr>
-<td ALIGN=CENTER><a href="liechtenstein/liechtenstein_o.html">Panství Liechtenstein</a></td>
+<td><a href="ruda/ruda_o.html">Panství Ruda a statek Mlýnice</a></td>
  
-<td ALIGN=CENTER>Dolní Rakousy</td>
+<td>Morava</td>
 
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>3</td>
-<td ALIGN=CENTER>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
  
 </tr>
 
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="schottwien/schottwien_o.html">Panství Schottwien</a></td>
+<tr>
+<td><a href="mor_trebova/mor_trebova_o.html">Panství Moravská Třebová a Trnávka</a></td>
  
-<td ALIGN=CENTER>Dolní Rakousy</td>
+<td>Morava</td>
 
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>1</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="sternberk/sternberk_o.html">Panství Šternberk</a></td>
+ 
+<td>Morava</td>
+
+<td>0</td>
+<td>9</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="usov/usov_o.html">Panství Úsov</a></td>
+ 
+<td>Morava</td>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
+ 
+</tr>
+
+<tr>
+<td><a href="zabreh/zabreh_o.html">Panství Zábřeh a statek Krasíkov</a></td>
+ 
+<td>Morava</td>
+
+<td>7</td>
+<td>1</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="krnov/krnov_o.html">Opavské a Krnovské knížectví</a></td>
+ 
+<td>Slezsko</td>
+
+<td>4</td>
+<td>2</td>
+<td>5</td>
+
+</tr>
+
+<tr>
+<td><a href="judenau/judenau_o.html">Panství Judenau</a></td>
+ 
+<td>Dolní Rakousy</td>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
  
 </tr>
 
 
 <tr>
-<td ALIGN=CENTER><a href="vaduz/vaduz_o.html">Panství Vaduz a Schellenberg</a></td>
+<td><a href="liechtenstein/liechtenstein_o.html">Panství Liechtenstein</a></td>
  
-<td ALIGN=CENTER>Lichtenštejnsko</td>
+<td>Dolní Rakousy</td>
 
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
  
 </tr>
 
 
-</table>
+<tr>
+<td><a href="schottwien/schottwien_o.html">Panství Schottwien</a></td>
+ 
+<td>Dolní Rakousy</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+ 
+</tr>
+
+
+<tr>
+<td><a href="vaduz/vaduz_o.html">Panství Vaduz a Schellenberg</a></td>
+ 
+<td>Lichtenštejnsko</td>
+
+<td>1</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+
 
 
 

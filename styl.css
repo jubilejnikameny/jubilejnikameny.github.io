@@ -143,3 +143,68 @@ nav li {
 .lang-switch:hover {
     background-color: #f0f0f0;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+}
+
+th, td {
+  padding: 0.75em;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;  /* <- explicitně horizontálně */
+  gap: 0.5rem;
+}
+
+.top-nav li {
+  /* nic, flex to vyřeší */
+}
+
+.top-nav a {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.top-nav a:hover {
+  background-color: #2980b9;
+}
+
+.top-nav a.active {
+  background-color: #1c5980;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .top-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

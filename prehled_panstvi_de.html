@@ -1,310 +1,420 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!DOCTYPE html>
+<html lang="cs">
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta name="GENERATOR" content="Mozilla/4.79 [en] (Windows NT 5.0; U) [Netscape]">
+   
    <title>Liechtensteinische Gedenksteine nach Herrschaften</title>
+   
+     <!-- Stejný CSS jako index.html -->
+  <link rel="stylesheet" href="styl.css">
+  <style>
+    /* Přídavné CSS pro moderní tabulku */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header.main-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header.main-header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+
+    header.main-header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:hover {
+      background-color: #f1f9ff;
+    }
+
+    /* Responzivní design pro mobil */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        display: none; /* skryjeme hlavičky pro mobil */
+      }
+
+      td {
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45%;
+        padding-left: 1rem;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+
+      /* Specifikujeme text pro každou buňku podle pořadí */
+      td:nth-of-type(1)::before { content: "Panství"; }
+      td:nth-of-type(2)::before { content: "Počet památníků"; }
+      td:nth-of-type(3)::before { content: "Poznámky"; }
+    }
+	
+	/* Přidat střídání barev řádků */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* světlejší řádky */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* bílá, nebo tmavší, pokud chceš kontrastnější */
+}
+	
+  </style>   
+   
 </head>
-<body text="#000000" bgcolor="#E5EEFF" link="#0000EE" vlink="#551A8B" alink="#FF0000"><!--wz-lista-13-w-->
+<body>
 
-<TABLE  CELLPADDING=3 CELLSPACING=0 border=0 cols=3>
-  <TBODY>
-    <TR>
-      <TD align=left><A href="index_de.html"><IMG src="a_buttons/bt_uvod2_de.jpg" height=19></A>&nbsp;&nbsp;</TD>
-      <TD align=left><A href="prehled_abecedni_de.html"><IMG src="a_buttons/bt_abc2_de.jpg" height=19></A>&nbsp;&nbsp;</TD>
-    </TR>
-  </TBODY>
-</TABLE>
-<HR>
-<BR>
-
-<b><u><font face="Verdana" color="#171AAA"><font size=+1>Übersicht der liechtensteinischen Gedenksteine nach Herrschaften</font></font></u></b>
-<br>&nbsp;
+<nav class="top-nav">
+  <ul>
+    <li><a href="index_de.html">Eingangsseite</a></li>
+    <li><a href="prehled_abecedni_de.html">Alphabetische Liste</a></li>    
+  </ul>
+</nav>
+<hr>
 
 
-<table CELLPADDING=2 CELLSPACING=0 bordercolor=#000000 frame=box rules=none COLS=5>
-<tr ALIGN=CENTER bgcolor=#D3D3D3>
-<td WIDTH="525"><b>Herrschaft</b></td>
+ <div class="container">
+<header class="main-header">
+  <h1>Übersicht der liechtensteinischen Gedenksteine nach Herrschaften</h1>
+  <p>Liste der Denkmäler nach historischen Herrschaften mit Angaben zu erhaltenen und dokumentierten Objekten.</p>
+</header>
 
-<td WIDTH="100"><b>Historisches Land</b></td>
- 
-<td WIDTH="130"><b>Dokumentierte Denkmäler</b>&nbsp;</td>
-<td WIDTH="130"><b>Nicht dokumentierte Denkmäler</b>&nbsp;</td>
-<td WIDTH="130"><b>Nicht erhaltene Denkmäler</b>&nbsp;</td>
- 
+
+
+<section class="data-table">
+<table>
+<thead>
+<tr>
+<th>Herrschaft</th>
+<th>Historisches Land</th>
+<th>Dokumentierte Denkmäler</th>
+<th>Nicht dokumentierte Denkmäler</th>
+<th>Nicht erhaltene Denkmäler</th>
 </tr>
- 
+</thead>
+<tbody>
+</tr>
 
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="kostelecncl/kostelecncl_o_de.html">Herrschaft Schwarzkosteletz (Kostelec n.Č.l.) und Auřinowes (Uhříněves)</a></td>
+<tr>
+<td><a href="kostelecncl/kostelecncl_o_de.html">Herrschaft Schwarzkosteletz (Kostelec n.Č.l.) und Auřinowes (Uhříněves)</a></td>
  
-<td ALIGN=CENTER>Böhmen</td>
+<td>Böhmen</td>
 
-<td ALIGN=CENTER>13</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>2</td>
+<td>13</td>
+<td>0</td>
+<td>2</td>
  
 </tr>
  
 <tr>
-<td ALIGN=CENTER><a href="rataje/rataje_o_de.html">Herrschaft Rattay (Rataje)</a></td>
+<td><a href="rataje/rataje_o_de.html">Herrschaft Rattay (Rataje)</a></td>
  
-<td ALIGN=CENTER>Böhmen</td>
+<td>Böhmen</td>
 
-<td ALIGN=CENTER>4</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER>Herrschaft Kaunitz (Kounice)</td>
- 
-<td ALIGN=CENTER>Böhmen</td>
-
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
  
 </tr>
 
 <tr>
-<td ALIGN=CENTER>Herrschaft Radim</td>
+<td>Herrschaft Kaunitz (Kounice)</td>
  
-<td ALIGN=CENTER>Böhmen</td>
+<td>Böhmen</td>
 
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
  
 </tr>
 
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="lanskroun/lanskroun_o_de.html">Herrschaft Landskron (Lanškroun)</a></td>
+<tr>
+<td>Herrschaft Radim</td>
  
-<td ALIGN=CENTER>Böhmen</td> 
+<td>Böhmen</td>
 
-<td ALIGN=CENTER>7</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="lanskroun/lanskroun_o_de.html">Herrschaft Landskron (Lanškroun)</a></td>
+ 
+<td>Böhmen</td> 
+
+<td>7</td>
+<td>0</td>
+<td>0</td>
  
 </tr>
 
 
 <tr>
-<td ALIGN=CENTER><a href="rumburk/rumburk_o_de.html">Herrschaft Rumburg (Rumburk)</a></td>
+<td><a href="rumburk/rumburk_o_de.html">Herrschaft Rumburg (Rumburk)</a></td>
  
-<td ALIGN=CENTER>Böhmen/Sachsen</td>
+<td>Böhmen/Sachsen</td>
 
-<td ALIGN=CENTER>5</td>
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>1</td>
+<td>5</td>
+<td>1</td>
+<td>1</td>
  
 </tr>
 
 
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="bucovicezdanice/bucovicezdanice_o_de.html">Herrschaft Butschowitz (Bučovice) und Steinitz (Ždánice)</a></td>
+<tr>
+<td><a href="bucovicezdanice/bucovicezdanice_o_de.html">Herrschaft Butschowitz (Bučovice) und Steinitz (Ždánice)</a></td>
  
-<td ALIGN=CENTER>Mähren</td>
+<td>Mähren</td>
 
-<td ALIGN=CENTER>9</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>4</td>
+<td>9</td>
+<td>0</td>
+<td>4</td>
  
 </tr>
  
 <tr>
-<td ALIGN=CENTER><a href="pozorice/pozorice_o_de.html">Herrschaft Posořitz (Pozořice) und Křtiny</a></td>
+<td><a href="pozorice/pozorice_o_de.html">Herrschaft Posořitz (Pozořice) und Křtiny</a></td>
 
-<td ALIGN=CENTER>Mähren</td> 
+<td>Mähren</td> 
 
-<td ALIGN=CENTER>10</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>3</td>
-</tr> 
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="breclav/breclav_o_de.html">Herrschaft Eisgrub (Lednice), Feldsberg (Valtice) und Lundenburg (Břeclav)</a></td>
- 
-<td ALIGN=CENTER>Mähren</td> 
-
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
-
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="uhostroh/uhostroh_o_de.html">Herrschaft Ungarisch Ostra (Uherský Ostroh)</a></td>
- 
-<td ALIGN=CENTER>Mähren</td> 
-
-<td ALIGN=CENTER>3</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>1</td>
- 
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="plumlov/plumlov_o_de.html">Herrschaft Plumenau (Plumlov)</a></td>
-
-<td ALIGN=CENTER>Mähren</td> 
-
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>0</td>
+<td>10</td>
+<td>0</td>
+<td>3</td>
 </tr> 
 
 <tr>
-<td ALIGN=CENTER><a href="hradisko/hradisko_o_de.html">Herrschaft Hradisko, Čelechovice, Kožušany, Žerotín, Týneček und Dolany</a></td>
+<td><a href="breclav/breclav_o_de.html">Herrschaft Eisgrub (Lednice), Feldsberg (Valtice) und Lundenburg (Břeclav)</a></td>
  
-<td ALIGN=CENTER>Mähren</td>
+<td>Mähren</td> 
 
-<td ALIGN=CENTER>4</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+
+</tr>
+
+<tr>
+<td><a href="uhostroh/uhostroh_o_de.html">Herrschaft Ungarisch Ostra (Uherský Ostroh)</a></td>
+ 
+<td>Mähren</td> 
+
+<td>3</td>
+<td>2</td>
+<td>1</td>
  
 </tr>
 
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="kolstejn/kolstejn_o_de.html">Herrschaft Goldenstein (Kolštejn)</a></td>
- 
-<td ALIGN=CENTER>Mähren</td>
+<tr>
+<td><a href="plumlov/plumlov_o_de.html">Herrschaft Plumenau (Plumlov)</a></td>
 
-<td ALIGN=CENTER>5</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>0</td>
+<td>Mähren</td> 
+
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr> 
+
+<tr>
+<td><a href="hradisko/hradisko_o_de.html">Herrschaft Hradisko, Čelechovice, Kožušany, Žerotín, Týneček und Dolany</a></td>
+ 
+<td>Mähren</td>
+
+<td>4</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="kolstejn/kolstejn_o_de.html">Herrschaft Goldenstein (Kolštejn)</a></td>
+ 
+<td>Mähren</td>
+
+<td>5</td>
+<td>2</td>
+<td>0</td>
 
 </tr>
 
 
 <tr>
-<td ALIGN=CENTER><a href="karlovec/karlovec_o_de.html">Herrschaft Karlsberg (Karlovec)</a></td>
+<td><a href="karlovec/karlovec_o_de.html">Herrschaft Karlsberg (Karlovec)</a></td>
  
-<td ALIGN=CENTER>Mähren</td>
+<td>Mähren</td>
 
-<td ALIGN=CENTER>4</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>1</td>
- 
-</tr>
-
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="ruda/ruda_o_de.html">Herrschaft Eisenberg (Ruda) und Lenzdorf (Mlýnice)</a></td>
- 
-<td ALIGN=CENTER>Mähren</td>
-
-<td ALIGN=CENTER>6</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="mor_trebova/mor_trebova_o_de.html">Herrschaft Mährisch Trübau (Moravská Třebová) und Turnau (Trnávka)</a></td>
- 
-<td ALIGN=CENTER>Mähren</td>
-
-<td ALIGN=CENTER>10</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="sternberk/sternberk_o_de.html">Herrschaft Sternberg (Šternberk)</a></td>
- 
-<td ALIGN=CENTER>Mähren</td>
-
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>9</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="usov/usov_o_de.html">Herrschaft Mährisch Aussee (Úsov)</a></td>
- 
-<td ALIGN=CENTER>Mähren</td>
-
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>2</td>
- 
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="zabreh/zabreh_o_de.html">Herrschaft Hohenstadt (Zábřeh) und Budigsdorf (Krasíkov)</a></td>
- 
-<td ALIGN=CENTER>Mähren</td>
-
-<td ALIGN=CENTER>7</td>
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="krnov/krnov_o_de.html">Fürstentum Troppau (Opava) und Jägerndorf (Krnov)</a></td>
-
-<td ALIGN=CENTER>Schlesien</td>
-
-<td ALIGN=CENTER>4</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>5</td>
-
-</tr>
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="judenau/judenau_o_de.html">Herrschaft Judenau</a></td>
- 
-<td ALIGN=CENTER>Niederösterreich</td>
-
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>2</td>
- 
-</tr>
-
-<tr>
-<td ALIGN=CENTER><a href="liechtenstein/liechtenstein_o_de.html">Herrschaft Liechtenstein</a></td>
- 
-<td ALIGN=CENTER>Niederösterreich</td>
-
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>3</td>
-<td ALIGN=CENTER>0</td>
- 
-</tr>
-
-
-<tr bgcolor=#D0D8E5>
-<td ALIGN=CENTER><a href="schottwien/schottwien_o_de.html">Herrschaft Schottwien</a></td>
- 
-<td ALIGN=CENTER>Niederösterreich</td>
-
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>2</td>
-<td ALIGN=CENTER>1</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
  
 </tr>
 
 
 <tr>
-<td ALIGN=CENTER><a href="vaduz/vaduz_o_de.html">Herrschaft Vaduz und Schellenberg</a></td>
+<td><a href="ruda/ruda_o_de.html">Herrschaft Eisenberg (Ruda) und Lenzdorf (Mlýnice)</a></td>
  
-<td ALIGN=CENTER>Liechtenstein</td>
+<td>Mähren</td>
 
-<td ALIGN=CENTER>1</td>
-<td ALIGN=CENTER>0</td>
-<td ALIGN=CENTER>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="mor_trebova/mor_trebova_o_de.html">Herrschaft Mährisch Trübau (Moravská Třebová) und Turnau (Trnávka)</a></td>
+ 
+<td>Mähren</td>
+
+<td>10</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="sternberk/sternberk_o_de.html">Herrschaft Sternberg (Šternberk)</a></td>
+ 
+<td>Mähren</td>
+
+<td>0</td>
+<td>9</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="usov/usov_o_de.html">Herrschaft Mährisch Aussee (Úsov)</a></td>
+ 
+<td>Mähren</td>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
+ 
+</tr>
+
+<tr>
+<td><a href="zabreh/zabreh_o_de.html">Herrschaft Hohenstadt (Zábřeh) und Budigsdorf (Krasíkov)</a></td>
+ 
+<td>Mähren</td>
+
+<td>7</td>
+<td>1</td>
+<td>0</td>
+ 
+</tr>
+
+<tr>
+<td><a href="krnov/krnov_o_de.html">Fürstentum Troppau (Opava) und Jägerndorf (Krnov)</a></td>
+
+<td>Schlesien</td>
+
+<td>4</td>
+<td>2</td>
+<td>5</td>
+
+</tr>
+
+<tr>
+<td><a href="judenau/judenau_o_de.html">Herrschaft Judenau</a></td>
+ 
+<td>Niederösterreich</td>
+
+<td>1</td>
+<td>2</td>
+<td>2</td>
+ 
+</tr>
+
+<tr>
+<td><a href="liechtenstein/liechtenstein_o_de.html">Herrschaft Liechtenstein</a></td>
+ 
+<td>Niederösterreich</td>
+
+<td>0</td>
+<td>3</td>
+<td>0</td>
  
 </tr>
 
 
-</table>
+<tr>
+<td><a href="schottwien/schottwien_o_de.html">Herrschaft Schottwien</a></td>
+ 
+<td>Niederösterreich</td>
+
+<td>1</td>
+<td>2</td>
+<td>1</td>
+ 
+</tr>
+
+
+<tr>
+<td><a href="vaduz/vaduz_o_de.html">Herrschaft Vaduz und Schellenberg</a></td>
+ 
+<td>Liechtenstein</td>
+
+<td>1</td>
+<td>0</td>
+<td>0</td>
+ 
+</tr>
+
+
+        </tbody>
+      </table>
+    </section>
+  </div>
 
 
 
