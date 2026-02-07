@@ -208,3 +208,28 @@ body {
     align-items: center;
   }
 }
+
+.data-table img {
+  height: 1.2em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+
+td.status {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;       /* vertikální zarovnání ikonky a textu */
+  justify-content: flex-start; /* klíčové: zarovná obsah vlevo */
+  gap: 0.4em;                /* mezera mezi ikonou a textem */
+}
+
+.status-item img {
+  margin: 0;
+}
+
+
+
