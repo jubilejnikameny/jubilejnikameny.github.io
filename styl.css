@@ -175,21 +175,22 @@ nav li {
 
 /* Responzivní menu pro mobil */
 @media (max-width: 600px) {
-  .top-nav ul {
-    flex-direction: column;
-    align-items: center; /* NE stretch! */
+  .top-nav {
+    flex-direction: column;   /* tlačítka pod sebe */
+    align-items: stretch;
     gap: 0.5rem;
     padding: 0 8px;
   }
 
   .top-nav a {
-    min-height: 50px;
+    min-height: 50px;         /* větší tlačítka */
     font-size: 1rem;
     padding: 12px 16px;
     justify-content: center;
-    gap: 4px;
+    gap: 4px;                 /* zmenšená mezera mezi ikonou a textem */
   }
 
+  /* Speciálně pro vlajku DE */
   .top-nav a.lang-switch {
     display: inline-flex;  /* jen tolik, kolik potřebuje */
     gap: 2px;
