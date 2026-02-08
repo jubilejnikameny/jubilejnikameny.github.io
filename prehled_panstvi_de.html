@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="de">
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   
+   <!-- viewport pro mobil -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Stejný CSS jako index.html -->
+  <link rel="stylesheet" href="styl.css">   
    
    <title>Liechtensteinische Gedenksteine nach Herrschaften</title>
    
-     <!-- Stejný CSS jako index.html -->
-  <link rel="stylesheet" href="styl.css">
+   
   <style>
     /* Přídavné CSS pro moderní tabulku */
     body {
@@ -38,6 +43,7 @@
     header.main-header p {
       font-size: 1.1rem;
       color: #555;
+	  text-align: center;
     }
 
     table {
@@ -92,9 +98,11 @@
       }
 
       /* Specifikujeme text pro každou buňku podle pořadí */
-      td:nth-of-type(1)::before { content: "Panství"; }
-      td:nth-of-type(2)::before { content: "Počet památníků"; }
-      td:nth-of-type(3)::before { content: "Poznámky"; }
+      td:nth-of-type(1)::before { content: "Herrschaft"; }
+      td:nth-of-type(2)::before { content: "Land"; }
+      td:nth-of-type(3)::before { content: "Dokumentiert"; }
+	  td:nth-of-type(4)::before { content: "Nicht dokumentiert"; }
+	  td:nth-of-type(5)::before { content: "Nicht erhalten"; }
     }
 	
 	/* Přidat střídání barev řádků */
@@ -112,13 +120,12 @@ tbody tr:nth-child(odd) {
 <body>
 
 <nav class="top-nav">
-  <ul>
-    <li><a href="index_de.html">Startseite</a></li>
-    <li><a href="prehled_abecedni_de.html">Alphabetische Liste</a></li>    
-  </ul>
+  <a href="index_de.html">Startseite</a>
+  <a href="prehled_abecedni_de.html">Alphabetische Liste</a>
+  <a href="a_hranicniky/hranicniky_de.html">Grenzsteine</a>
 </nav>
-<hr>
 
+<hr>
 
  <div class="container">
 <header class="main-header">
