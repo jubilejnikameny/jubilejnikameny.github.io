@@ -199,7 +199,7 @@ nav li {
     display: inline-flex;     /* jen tolik, kolik potřebuje */
     align-items: center;      /* udržet vlaječku a text ve stejné řadě */
     justify-content: center;
-    gap: 2px;                 /* malá mezera mezi vlaječkou a DE */
+    gap: 4px;                 /* malá mezera mezi vlaječkou a DE */
   }
 
   .lang-switch img {
