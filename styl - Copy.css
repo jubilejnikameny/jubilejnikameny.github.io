@@ -1,0 +1,263 @@
+/* ---------------------------------- */
+/* styl.css - Responzivní úpravy pro mobil */
+/* ---------------------------------- */
+
+/* Základní box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Tělo stránky */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;  /* odsazení od levého a pravého okraje */
+  box-sizing: border-box;
+}
+
+/* Odsazení všech odstavců uvnitř containeru */
+.container p {
+    margin: 16px 0;      /* vertikální mezera mezi odstavci */
+    padding: 0 16px;     /* horizontální odsazení, aby text neležel ke kraji */
+}
+
+/* Obrázky */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Nadpisy a odstavce */
+h1, h2, h3 {
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+.container hr {
+  border: none;
+  height: 1px;
+  background: #171AAA;
+  margin: 16px 0;
+}
+
+/* Menu / navigace */
+nav, .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column; /* svisle na mobilu */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0.25em 0;
+}
+
+/* Responzivní text pro menší obrazovky */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+}
+
+.image-row {
+  display: flex;            
+  justify-content: center;  
+  flex-wrap: wrap;          
+  gap: 10px;                
+}
+
+.image-row img {
+  flex-shrink: 0;           
+  height: auto;             
+}
+
+.side-images-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.side-images-text img {
+  flex-shrink: 0;
+  max-width: 140px;
+  height: auto;
+}
+
+.side-images-text p {
+  flex: 1 1 auto;       /* text zabírá zbylý prostor */
+  min-width: 0;         /* kritické pro flexbox */
+  margin: 0;            /* žádný margin */
+  padding: 0;           /* žádný padding uvnitř textu */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5rem;   /* podobné size=4, klidně 1.6rem */
+    font-weight: bold;
+    color: #171AAA;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.header-lang {
+    text-align: right;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #171AAA;
+    text-decoration: none;
+}
+
+.lang-switch img {
+    height: 14px;
+    display: block;
+}
+
+.lang-switch:hover {
+    background-color: #f0f0f0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+}
+
+th, td {
+  padding: 0.75em;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;  /* <- explicitně horizontálně */
+  gap: 0.5rem;
+}
+
+.top-nav li {
+  /* nic, flex to vyřeší */
+}
+
+.top-nav a {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.top-nav a:hover {
+  background-color: #2980b9;
+}
+
+.top-nav a.active {
+  background-color: #1c5980;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .top-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.data-table img {
+  height: 1.2em;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+
+td.status {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;       /* vertikální zarovnání ikonky a textu */
+  justify-content: flex-start; /* klíčové: zarovná obsah vlevo */
+  gap: 0.4em;                /* mezera mezi ikonou a textem */
+}
+
+.status-item img {
+  margin: 0;
+}
+
+
+nav,
+header,
+main,
+footer,
+table {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav,
+header,
+main,
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
