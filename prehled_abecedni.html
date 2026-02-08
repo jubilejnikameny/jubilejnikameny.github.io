@@ -2,11 +2,16 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
+  
+   <!-- viewport pro mobil -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Stejný CSS jako index.html -->
+  <link rel="stylesheet" href="styl.css">  
+  
   <title>Přehled lichtenštejnských památníků – abecední seznam</title>
     
-       <!-- Stejný CSS jako index.html -->
-  <link rel="stylesheet" href="styl.css">
+
   <style>
     /* Přídavné CSS pro moderní tabulku */
     body {
@@ -38,6 +43,7 @@
     header.main-header p {
       font-size: 1.1rem;
       color: #555;
+	  text-align: center;
     }
 
     table {
@@ -95,6 +101,7 @@
 
     }
 
+
   /* výjimka pro status sloupec */
   td.status {
     display: table-cell !important; /* zachovat původní tabulkové chování */
@@ -108,21 +115,21 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #ffffff; /* bílá, nebo tmavší, pokud chceš kontrastnější */
+    background-color: #ffffff; /* bílá, nebo tmavší */
 }
-
-
 	
   </style>  
 </head>
+
+
 <body>
 
 <nav class="top-nav">
-  <ul>
-    <li><a href="index.html">Úvod</a></li>    
-    <li><a href="prehled_panstvi.html">Přehled panství</a></li>
-  </ul>
+  <a href="index.html">Úvod</a>
+  <a href="prehled_panstvi.html">Přehled panství</a>
+  <a href="a_hranicniky/hranicniky.html">Hraniční kameny</a>
 </nav>
+
 <hr>
 
 <div class="container">
