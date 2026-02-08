@@ -138,3 +138,13 @@ tbody tr:nth-child(odd) {
     width: 90%; 
   }
 }
+
+@media (max-width: 768px) {
+  .item-table .item-text {
+    font-size: 1.2rem;  /* zvětšení textu na mobilu */
+  }
+
+  .subheader {
+    font-size: 1.8rem;  /* větší subheader pro mobil */
+  }
+}
