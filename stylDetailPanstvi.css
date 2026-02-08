@@ -1,0 +1,140 @@
+   /* Přídavné CSS pro moderní tabulku */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header.main-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header.main-header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+
+    header.main-header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:hover {
+      background-color: #f1f9ff;
+    }
+
+    @media (max-width: 768px) {
+  table {
+    width: 100%;          /* Tabulka se zúží na šířku obrazovky */
+    font-size: 0.9rem;    /* Mírně menší písmo pro mobil */
+  }
+
+  th, td {
+    padding: 0.5rem 0.75rem; /* menší padding pro úsporu místa */
+  }
+
+    }
+	
+	/* Přidat střídání barev řádků */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* světlejší řádky */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* bílá, nebo tmavší, pokud chceš kontrastnější */
+}
+
+/* Styl pro samostatný menší tučný nadpis */
+.subheader {
+  font-size: 1.5rem;       /* velikost nadpisu */
+  font-weight: 700;        /* tučný */
+  color: #2c3e50;          /* barva */
+  margin-top: 3rem;         /* větší svislá mezera nad nadpisem */
+  margin-bottom: 0.5rem;    /* mezera pod nadpisem */
+  line-height: 1.2;        /* kompaktní řádkování */
+  text-align: center;       /* horizontální vycentrování */
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tabulka pro seznam položek */
+.item-table {
+  width: auto;                /* přizpůsobí se obsahu */
+  margin: 1rem auto;          /* centrování a svislá mezera */
+  border-collapse: collapse;
+}
+
+.item-table .item-text {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.item-table .item-thumb {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.item-table .item-thumb img {
+  max-width: 200px;       /* maximální šířka */
+  max-height: 200px;      /* maximální výška */
+  width: auto;             /* zachová poměr stran */
+  height: auto;            /* zachová poměr stran */
+  display: block;          /* odstraní spodní mezery */
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+  object-fit: contain;     /* zajistí, že obrázek se vejde do boxu a proporce zůstanou */
+}
+
+.item-table .item-thumb img:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Responzivní zmenšení tabulky na mobilu */
+@media (max-width: 768px) {
+  .item-table {
+    width: 90%; 
+  }
+}
