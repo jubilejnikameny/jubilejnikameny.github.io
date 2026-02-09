@@ -8,47 +8,12 @@
   
   <!-- Stejný CSS jako index.html -->
   <link rel="stylesheet" href="styl.css">  
+  <link rel="stylesheet" href="navigation.css">
   
   <title>Přehled lichtenštejnských památníků – abecední seznam</title>
     
 
-  <style>
-    /* Přídavné CSS pro moderní tabulku */
-
-
-
-
-
-    /* Responzivní design pro mobil */
-     @media (max-width: 768px) {
-      table, thead, tbody, th, td, tr {
-        display: block;
-      }
-
-      th {
-        display: none; /* skryjeme hlavičky pro mobil */
-      }
-
-
-      td {
-        display: block;
-        padding-left: 50%;
-        position: relative;
-      }
-
-      td::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 45%;
-        padding-left: 1rem;
-        font-weight: bold;
-        white-space: nowrap;
-      }
-
-    }
-
-
+  <style> 
   /* výjimka pro status sloupec */
   td.status {
     display: table-cell !important; /* zachovat původní tabulkové chování */
@@ -56,14 +21,7 @@
     position: static !important;     /* zruší absolute positioning */
   }
 	
-	/* Přidat střídání barev řádků */
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* světlejší řádky */
-}
 
-tbody tr:nth-child(odd) {
-    background-color: #ffffff; /* bílá, nebo tmavší */
-}
 	
   </style>  
 </head>
