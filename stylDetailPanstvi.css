@@ -129,3 +129,21 @@ tbody tr:nth-child(odd) {
 .item-table .item-thumb img:hover {
   transform: scale(1.05);
 }
+
+
+/* Responzivní zmenšení tabulky na mobilu */
+@media (max-width: 768px) {
+  .item-table {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .item-table .item-text {
+    font-size: 1.6rem;  /* zvětšení textu na mobilu */
+  }
+
+  .subheader {
+    font-size: 2.4rem;  /* větší subheader pro mobil */
+  }
+}
