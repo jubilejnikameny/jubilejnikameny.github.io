@@ -129,14 +129,34 @@ img {
 }
 
 /* ---------------------------------- */
+/* Navigace */
+nav, .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column; /* mobil */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0.25em 0;
+}
+
 /* Top navigation */
 .top-nav {
   display: flex;
   justify-content: center;
   align-items: stretch; /* všechny tlačítka stejné výšky */
   gap: 0.5rem;
-  margin-top: 15px;   /* malá mezera nad navigací */
-  flex-wrap: wrap;
+  margin-top: 15px;   /* malá mezera nad navigací */  
 }
 
 .top-nav a {
@@ -206,6 +226,11 @@ img {
     gap: 0.5rem;
     padding: 0 8px;
   }
+  
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .top-nav a {
     display: flex;
@@ -214,7 +239,7 @@ img {
     min-height: 50px;
     font-size: 1rem;
     padding: 12px 16px;
-    gap: 6px;
+    gap: 6px;      
   }
 
   /* speciálně DE vlaječka */
