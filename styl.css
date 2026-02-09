@@ -55,12 +55,41 @@ h1, h2, h3 {
   text-align: center;       /* horizontální vycentrování */
 }
 
+header.main-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header.main-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+header.main-header p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+}
+
+
+/* ---------------------------------- */
 /* Obrázky */
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* Obrázky v řadě */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
 /* ---------------------------------- */
@@ -99,29 +128,7 @@ img {
   }
 }
 
-
 /* ---------------------------------- */
-/* Navigace */
-nav, .menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  padding: 0 16px;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: column; /* mobil */
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-nav li {
-  margin: 0.25em 0;
-}
-
 /* Top navigation */
 .top-nav {
   display: flex;
@@ -224,58 +231,47 @@ nav li {
   }
 }
 
-/* ---------------------------------- */
-/* Obrázky v řadě */
-.image-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  padding: 0 16px;
-  box-sizing: border-box;
-}
-
-/* ---------------------------------- */
-/* Blok obrázek + text */
-.side-images-text {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 20px;       /* mezera mezi obrázkem a textem */
-  padding: 0;       /* padding necháme na containeru */
-  margin: 0;
-}
-
-.side-images-text img {
-  flex-shrink: 0;
-  max-width: 140px;
-  height: auto;
-}
-
-.side-images-text p {
-  flex: 1 1 auto;
-  min-width: 0;
-  margin: 0;
-  padding: 0;       /* žádný padding */
-}
 
 /* ---------------------------------- */
 /* Tabulky */
+
+
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: var(--font-body);
+  margin-top: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 th, td {
-  padding: 0.75em;
-  border-bottom: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
 }
 
 th {
-  background-color: #f4f4f4;
-  font-weight: bold;
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
 }
+
+tr:hover {
+  background-color: #f1f9ff;
+}
+
+
+/* Přidat střídání barev řádků */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* světlejší řádky */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* bílá, nebo tmavší */
+}
+
 
 .data-table img {
   height: 1.2em;
@@ -297,6 +293,33 @@ td.status {
 
 .status-item img { margin: 0; }
 
+/* Responzivní design pro mobil */
+ @media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+   th {
+    display: none; /* skryjeme hlavičky pro mobil */
+  }
+    td {
+    display: block;
+    padding-left: 50%;
+    position: relative;
+  }
+  td::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    padding-left: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+
+
+/* ---------------------------------- */
+/* Page footer */
 .page-footer {
   text-align: center;  /* centrování textu */
   margin: 0 auto;      /* zajistí centrování celého bloku, pokud je potřeba */
