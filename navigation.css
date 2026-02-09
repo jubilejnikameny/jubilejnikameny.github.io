@@ -126,3 +126,15 @@ nav li {
     width: auto;
   }
 }
+
+
+/* ---------------------------------- */
+/* Responsivní text */
+@media (max-width: 600px) {
+  body { font-size: 14px; }
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.3em; }
+  h3 { font-size: 1.1em; }
+
+  .top-nav ul { flex-direction: column; align-items: center; }
+}
