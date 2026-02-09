@@ -88,6 +88,22 @@ nav li {
   filter: brightness(0) invert(1); /* vlaječka se zvýrazní při hover */
 }
 
+
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;  /* nadpis nad spacerem/sloupci */
+    align-items: center;     /* horizontální centrování */
+    padding: 0 8px;          /* menší padding na mobilu */
+  }
+
+  .page-title {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.3rem;       /* případně zmenšit font pro mobil */
+  }
+}
+
 /* Responzivní menu pro mobil */
 @media (max-width: 600px) {
   .top-nav ul {
