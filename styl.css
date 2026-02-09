@@ -130,6 +130,138 @@ img {
 
 
 /* ---------------------------------- */
+/* Navigace */
+nav, .menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column; /* mobil */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0.25em 0;
+}
+
+/* Top navigation */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* všechny tlačítka stejné výšky */
+  gap: 0.5rem;
+  margin-top: 15px;   /* malá mezera nad navigací */  
+}
+
+.top-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  min-height: 40px;      /* základní výška na desktopu */
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1;
+  gap: 6px;              /* mezera mezi ikonou a textem */
+}
+
+.top-nav a:hover {
+  background-color: #2980b9;
+}
+
+.top-nav a.active {
+  background-color: #1c5980;
+  font-weight: bold;
+}
+
+/* ---------------------------------- */
+/* DE vlaječka */
+.lang-switch {
+  display: flex;             /* blokový flex, ne inline-flex */
+  align-items: center;       /* vertikální centrování */
+  justify-content: center;   /* horizontální centrování textu a vlaječky */
+  gap: 4px;                  /* mezera mezi vlaječkou a textem */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #171AAA;
+  text-decoration: none;
+  border: 1px solid #171AAA;
+  background-color: #f9f9f9;
+  line-height: 1;
+}
+
+.lang-switch img {
+  height: 20px; /* větší a přehlednější vlaječka */
+  width: auto;
+  display: block;
+}
+
+.lang-switch:hover {
+  background-color: #171AAA;
+  color: white;
+}
+
+.lang-switch:hover img {
+  filter: brightness(0) invert(1); /* vlaječka se zvýrazní při hover */
+}
+
+/* Responzivní menu pro mobil */
+@media (max-width: 600px) {
+  .top-nav ul {
+    flex-direction: column;  /* tlačítka pod sebou */
+    align-items: center;      /* NE stretch, aby tlačítka nezabírala celou šířku */
+    gap: 0.5rem;
+    padding: 0 8px;
+  }
+  
+  .top-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-nav a {
+    display: flex;
+    align-items: center;      /* vertikální centrování obsahu */
+    justify-content: center;  /* horizontální centrování textu a vlaječky */
+    min-height: 50px;
+    font-size: 1rem;
+    padding: 12px 16px;
+    gap: 6px;      
+  }
+
+  /* speciálně DE vlaječka */
+  .top-nav a.lang-switch {
+    display: inline-flex;     /* jen tolik, kolik potřebuje */
+    align-items: center;      /* udržet vlaječku a text ve stejné řadě */
+    justify-content: center;
+    gap: 4px;                 /* malá mezera mezi vlaječkou a DE */
+  }
+
+  .lang-switch img {
+    flex-shrink: 0;           /* vlaječka se nevytahuje ani nepřesouvá */
+    height: 20px;
+    width: auto;
+  }
+}
+
+
+
+
+/* ---------------------------------- */
 /* Tabulky */
 
 
