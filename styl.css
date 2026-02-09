@@ -136,6 +136,7 @@ img {
   align-items: stretch; /* všechny tlačítka stejné výšky */
   gap: 0.5rem;
   margin-top: 15px;   /* malá mezera nad navigací */
+  flex-wrap: wrap;
 }
 
 .top-nav a {
