@@ -97,7 +97,7 @@ tbody tr:nth-child(odd) {
 
 /* Tabulka pro seznam položek */
 .item-table {
-  width: auto;                /* přizpůsobí se obsahu */
+  width: 60%;                /* přizpůsobí se obsahu */
   margin: 1rem auto;          /* centrování a svislá mezera */
   border-collapse: collapse;
 }
@@ -106,7 +106,7 @@ tbody tr:nth-child(odd) {
   padding: 0.5rem 1rem;
   text-align: left;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .item-table .item-thumb {
@@ -129,7 +129,6 @@ tbody tr:nth-child(odd) {
 .item-table .item-thumb img:hover {
   transform: scale(1.05);
 }
-
 
 
 /* Responzivní zmenšení tabulky na mobilu */
