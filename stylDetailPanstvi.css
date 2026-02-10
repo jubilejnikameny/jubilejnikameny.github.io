@@ -96,7 +96,7 @@ tbody tr:nth-child(odd) {
 
 /* Tabulka pro seznam položek */
 .item-table {
-  width: 60%;                /* přizpůsobí se obsahu */
+  width: 52%;                /* přizpůsobí se obsahu */
   margin: 1rem auto;          /* centrování a svislá mezera */
   border-collapse: collapse;
 }
