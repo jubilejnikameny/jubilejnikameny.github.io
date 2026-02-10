@@ -139,10 +139,10 @@ tbody tr:nth-child(odd) {
 
 @media (max-width: 768px) {
   .item-table .item-text {
-    font-size: 1.4rem;  /* zvětšení textu na mobilu */
+    font-size: 1.3rem;  /* zvětšení textu na mobilu */
 	text-align: center;       /* horizontální vycentrování */
   }
 
   .subheader {
-    font-size: 1.6rem;  /* větší subheader pro mobil */  }
+    font-size: 1.5rem;  /* větší subheader pro mobil */  }
 }
