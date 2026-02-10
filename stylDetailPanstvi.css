@@ -108,6 +108,11 @@ tbody tr:nth-child(odd) {
   font-size: 1.2rem;
 }
 
+.item-table .item-smalltext {
+  padding: 0.5rem 1rem;
+  text-align: left;  
+}
+
 .item-table .item-thumb {
   padding: 0.5rem 1rem;
   text-align: center;
