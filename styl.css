@@ -118,7 +118,7 @@ img {
 /* Obrázky v řadě v hraničních kamenech jednoho panství pro mobil */
 @media (max-width: 600px) {
   .image-row-fixed img {
-    height: 140px;
+    height: 130px;
   }
 }
 
