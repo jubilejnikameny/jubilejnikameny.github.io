@@ -89,7 +89,7 @@ img {
   margin: 0 auto;
 }
 
-/* Obrázky v řadě */
+/* Obrázky v řadě na titulce*/
 .image-row {
   display: flex;
   flex-wrap: wrap;
@@ -98,6 +98,23 @@ img {
   padding: 0 16px;
   box-sizing: border-box;
 }
+
+/* Obrázky v řadě v hraničních kamenech jednoho panství */
+.image-row-fixed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+/* Obrázky v řadě v hraničních kamenech jednoho panství */
+.image-row-fixed img {
+  height: 180px;
+  width: auto;
+  object-fit: cover;
+}
+
 
 /* ---------------------------------- */
 /* Header */
