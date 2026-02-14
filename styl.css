@@ -439,7 +439,7 @@ td.status {
 
   /* střídání řádků */
   table:not(.item-table) tbody tr:nth-child(even) {
-    background-color: #eef5fb;
+    background-color: #f3f6f8;
   }
 
   table:not(.item-table) tbody tr:nth-child(odd) {
