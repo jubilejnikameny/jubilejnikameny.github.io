@@ -134,6 +134,17 @@ tbody tr:nth-child(odd) {
   transform: scale(1.05);
 }
 
+/* Nápisy na kamenech */
+.inscription {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  background-color: #f7f5f1;
+  padding: 1rem;
+  border-radius: 6px;
+  line-height: 1.4;
+  white-space: pre;
+}
+
 
 /* Responzivní zmenšení tabulky na mobilu */
 @media (max-width: 768px) {
