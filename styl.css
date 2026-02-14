@@ -406,7 +406,7 @@ td.status {
 
   /* větší kontrast mezi řádky */
   tbody tr:nth-child(even) {
-    background-color: #e6f0f8;   /* světle modrá */
+    background-color: #eef5fb;   /* světle modrá */
   }
 
   tbody tr:nth-child(odd) {
