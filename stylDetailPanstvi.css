@@ -151,3 +151,35 @@ tbody tr:nth-child(odd) {
   .subheader {
     font-size: 1.5rem;  /* větší subheader pro mobil */  }
 }
+
+
+/* ======================================
+   Lepší kontrast item-table na mobilu
+====================================== */
+@media (max-width: 768px) {
+
+  .item-table tbody tr:nth-child(even) {
+    background-color: #e6f0f8;
+  }
+
+  .item-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  /* každý řádek jako samostatná karta */
+  .item-table tbody tr {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  /* jemné oddělení buněk */
+  .item-table td {
+    border-bottom: 1px solid #dde6ee;
+  }
+
+  .item-table td:last-child {
+    border-bottom: none;
+  }
+}
