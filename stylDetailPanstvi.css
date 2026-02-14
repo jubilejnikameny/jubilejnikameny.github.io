@@ -183,3 +183,36 @@ tbody tr:nth-child(odd) {
     border-bottom: none;
   }
 }
+
+/* ======================================
+   Základní TABLE – lepší čitelnost na mobilu
+   (platí i pro tabulky bez class)
+====================================== */
+@media (max-width: 768px) {
+
+  /* střídání řádků */
+  table:not(.item-table) tbody tr:nth-child(even) {
+    background-color: #eef5fb;
+  }
+
+  table:not(.item-table) tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  /* karta místo klasického řádku */
+  table:not(.item-table) tbody tr {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  /* oddělení buněk */
+  table:not(.item-table) td {
+    border-bottom: 1px solid #dde6ee;
+  }
+
+  table:not(.item-table) td:last-child {
+    border-bottom: none;
+  }
+}
