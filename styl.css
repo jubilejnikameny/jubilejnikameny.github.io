@@ -397,3 +397,36 @@ td.status {
 
   .top-nav ul { flex-direction: column; align-items: center; }
 }
+
+
+/* ======================================
+   Lepší čitelnost tabulky na mobilu
+====================================== */
+@media (max-width: 768px) {
+
+  /* větší kontrast mezi řádky */
+  tbody tr:nth-child(even) {
+    background-color: #eef5fb;   /* světle modrá */
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  /* každý záznam jako karta */
+  tbody tr {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  /* oddělení jednotlivých buněk */
+  td {
+    border-bottom: 1px solid #dde6ee;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+}
