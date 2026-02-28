@@ -122,6 +122,28 @@ img {
   }
 }
 
+/* Obrázky v řadě v hraničních kamenech titulky */
+.image-row-fixed-small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+/* Obrázky v řadě v hraničních kamenech titulky */
+.image-row-fixed-small img {
+  height: 120px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* Obrázky v řadě v hraničních kamenech titulky pro mobil */
+@media (max-width: 600px) {
+  .image-row-fixed-small img {
+    height: 130px;
+  }
+}
 
 /* ---------------------------------- */
 /* Header */
